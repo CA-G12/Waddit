@@ -142,7 +142,7 @@ app.put('/api/update', (req, res) => {
         ).then(data => res.json(data.rows[0]))
     }
 })
-
-app.listen(5000, () =>{
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () =>{
     console.log('server is listining on port 5000');
 })
