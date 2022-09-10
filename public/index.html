@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Waddit</title>
+</head>
+<body>
+    <header>
+        <div class="logoContainer">
+            <img src="./assets/Reddit-Logo.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">profile</a>
+        </nav>
+    </header>
+    <section class="container">
+        <section class="userRef">
+            <div class="sortingTags">
+                <a class="popular" href="#">Popular</a>
+                <a class="hot" href="#">Hot</a>    
+            </div>
+            <div class="addPostSection">
+            </div>
+            <div class="userContainer">
+                <p class="userName"></p>
+                <p class="signOUTBTN">Sign Out</p> 
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+            </div>
+        </section>
+        <section class="postsContainer">
+            <!-- <div class="post">
+                <div class="voteContainer">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="voteText">20</p>
+                </div>
+                <div class="postContent">
+                    <p class="postText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, aspernatur.</p>
+                    <p class="postTime">submitted 5 hors ago by wadia</p>
+                </div> -->
+            </div>
+        </section>
+    </section>
+    <!--! old is gold -->
+    <section class="signForms">
+        <form class="signUpForm">
+            <p>Sign Up</p>
+            <input type="text" class="userNameInput" placeholder="name">
+            <input type="text" class="email" placeholder="email">
+            <input type="text" class="password" placeholder="password">
+            <input type="text" class="imgUser" placeholder="put your photo">
+            <button class="signUpBtn">sign up</button>
+        </form>
+        <form class="signInForm">
+            <p>Sign In</p>
+            <input type="text" class="emailIn" placeholder="email">
+            <input type="text" class="passwordIn" placeholder="password">
+            <button class="signInBtn">sign in</button>
+        </form>    
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
