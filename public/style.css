@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #f8f8f8;
+    display: flex;
+    gap: 2rem;
+}
+
+/*! header section */
+
+header{
+    background-color: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.logoContainer{
+    width: 100%;
+}
+
+.logoContainer img{
+    width: 50%;
+    margin: 2rem 2rem;
+    display: block;
+    cursor: pointer;
+}
+
+.search{
+    width: 90%;
+    border: .2rem solid #e5e5e5;
+    border-radius: 0  4rem  4rem 0;
+    padding: 1.2rem 0;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.search input{
+    width: 82%;
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder{
+    color: #c0c0c0;
+    padding-left: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: .05rem;
+}
+
+.search i{
+    color: #e5e5e5;
+    font-size: 2rem;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+nav a{
+    text-decoration: none;
+    letter-spacing: .1rem;
+    color: #808080;
+}
+
+/*! userRef */
+
+.userRef{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.sortingTags{
+    width: 25%;
+}
+
+.sortingTags a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #999999;
+    margin-right: 2rem;
+}
+
+.userContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 30%;
+}
+
+
+.userIamge{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.signOUTBTN{
+    cursor: pointer;
+    font-weight: 450;
+    font-size: 1.4rem;
+}
+
+/* .userContaier i{
+    color: #c4c4c4;
+} */
+
+.addPostSection{
+    width: 63%;
+}
+
+.addPostForm{
+    display: flex;
+    justify-content: center;
+}
+
+.addPostInput{
+    width: 40%;
+    /* margin-left: 10%; */
+    border: .2rem solid #e5e5e5;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    outline: none;
+    margin-right: 1rem;
+}
+
+.addPostInput::placeholder{
+    color: #c0c0c0;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+}
+
+.addPostBtn{
+    display: none;
+}
+
+/*! posts section */
+
+.updateInput{
+    display: none;
+}
+
+.container{
+    width: 80%;
+    margin-left: 17.5%;
+}
+
+.postsContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.voteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.voteContainer i{
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+.voteContainer p{
+    color: #9b9a9a;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.postImg{
+    width: 12rem;
+    height: 8rem;
+    border-radius: .4rem;
+    display: block;
+    margin-right: 2rem;
+}
+
+.postContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.postContent i{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color:#a3a3a3;
+}
+
+.postContent i:hover{
+    color: rgb(253, 69, 0);
+}
+
+.postText{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .07rem;
+    color: rgb(60, 60, 60);
+}
+
+.postTime{
+    font-size: 1.5rem;
+    color: #a3a3a3;
+    letter-spacing: .05rem;
+}
+
+/*! sign forms */
+
+.signForms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+}
+
+.signForms form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.signForms input, button{
+    margin: .7rem;
+    padding: 1rem;
+    outline: none;
+}
+
+.signForms button{
+    background-color: #FD4500;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.signForms p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* responsive */
+
+@media only screen and (max-width: 962px) {
+    .search{
+        width: 90%;
+        border: .2rem solid #e5e5e5;
+        border-radius: 4rem;
+        padding: 0;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+    
+    .search input{
+        width: 80%;
+        border-radius: 4rem;
+        background-color: transparent;
+    }
+
+    .search i{
+        color: #e5e5e5;
+        font-size: 1.2rem;
+
+    }
+
+  }
+
+
+@media only screen and (max-width: 816px) {
+    html{
+        font-size: 5px;
+
+    }
+
+    header{
+        width: 100%;
+        position: block;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        height: 10rem;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logoContainer {
+        width: 20%;
+    }
+    
+    .logoContainer img{
+        width: 60%;
+        margin: 2rem 2rem;
+        display: block;
+    }
+    
+    .search{
+        width: 40%;
+        height: 5rem;
+        border: .2rem solid #e5e5e5;
+        border-radius: 4rem;
+        padding: 0;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+    
+    .search input{
+        width: 75%;
+        background-color: transparent;
+    }
+
+    .search i{
+        margin-left: 6rem;    
+    }
+   
+    nav{
+        flex-direction: row;
+    }    
+
+    .container{
+        width: 90%;
+        margin: 10rem auto;
+    }
+    
+    .postsContainer{
+        gap: 2rem;
+    }    
+  }
+
+
+  @media only screen and (max-width: 375px) {
+    .search i{
+        margin-left: 2.5rem;    
+    }
+  }
+
+
+/* old but important */
